@@ -1,0 +1,2 @@
+Site para a produtora Pedra do Mar como atividade de treinamento dos cursos do Programa Desenvolve do Grupo Boticário.
+O site é simples, contendo apenas uma página com 5 seções: home, quem somos, serviços, produções e contato. O código é composto em sua maior parte por HTML e CSS, com um pouco de JavaScript nos slides de imagens.
