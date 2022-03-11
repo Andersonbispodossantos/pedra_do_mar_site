@@ -1,0 +1,311 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* CABEÇALHO*/
+
+.cabecalho {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #d4c19f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+    z-index: 10;
+}
+
+.logo {
+    height: 70px;
+}
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #1892b1;   
+    font-size: 20px;
+}
+
+/* HOME */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #1892b1;
+    padding: 130px 0 50px 0;
+}
+
+#id_home {
+    position: relative;
+    width: 940px;
+    height: 470px;
+    margin: auto;
+}
+
+
+.carrossel {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    width: 940px;
+}
+
+.container-carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.img_carrossel {
+    object-fit: cover;
+    width: 940px;
+    height: 470px;
+}
+
+/* QUEM SOMOS */
+
+.quem-somos {
+    background-color: #d4c19f;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    width: 940px;
+    margin: auto;
+}
+
+.titulo-quem-somos {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #1892b1;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.conteudo-quem-somos {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+  
+.paragrafo-quem-somos {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1892b1;
+    margin-bottom: 1.5rem;
+}
+
+.imagem-quem-somos {
+    width: 30%;
+    opacity: 1;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+    background-color: #1892b1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.titulo-servicos {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #d4c19f;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 24px;
+}
+
+.lista-servicos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.lista-servicos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #d4c19f;
+    border-radius: 10px;
+}
+
+.lista-servicos li:hover {
+    border: 2px solid #ffaf48;
+    transform: scale(1.1);
+    font-weight: 500;
+    transition: 400ms;
+}
+
+.img-servico {
+    width: 100%;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+.nome-servico {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    color: #d4c19f;
+}
+
+.descricao-servico {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    color: #d4c19f;
+}
+
+
+/* PRODUÇÕES */
+
+.producoes {
+    background-color: #d4c19f;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.titulo-producoes {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #1892b1;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.lista-producoes {
+    width: 940px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.lista-producoes li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 1.5% 1.5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #1892b1;
+    border-radius: 10px;
+}
+
+.lista-producoes h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 18px;
+    color: #1892b1;
+}
+
+.img-producoes {
+    width: 100%;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+.lista-producoes li:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+    transition: 400ms;
+}
+
+.descricao-producao {
+    font-family: "Montserrat", sans-serif;
+    color: #1892b1;
+    margin-top: 18px;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #1892b1;
+    padding-top: 2.5rem;
+    padding-bottom: 0,5rem;
+}
+
+.container-rodape {
+    width: 940px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.rodape h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #d4c19f;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.conteudo-rodape {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    margin: 0 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #d4c19f;
+    margin: 0 0 10px; 
+    font-family: "Montserrat", sans-serif;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 25px;
+    width: 70%;
+} 
+
+.enviar {
+    background: #d4c19f;
+    color: #1892b1;
+    width: 15%;
+    padding: 5px 0;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: lightgray;
+    transition: 400ms;
+}
+
+.mapa {
+    margin-top: 20px;
+}
+
+.contatos p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #d4c19f;
+    padding: 3px 0;
+}
