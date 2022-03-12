@@ -10,11 +10,14 @@ html {
     top: 0;
     width: 100%;
     background: #d4c19f;
+    z-index: 10;
+}
+
+.container-cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 18px;
-    z-index: 10;
 }
 
 .logo {
@@ -22,6 +25,7 @@ html {
 }
 .cabecalho-menu {
     display: flex;
+    justify-content: space-around;
     gap: 32px;
 }
 
@@ -46,7 +50,7 @@ html {
 
 #id_home {
     position: relative;
-    width: 940px;
+    max-width: 940px;
     height: 470px;
     margin: auto;
 }
@@ -55,7 +59,7 @@ html {
 .carrossel {
     box-shadow: 2px 2px 4px black;
     overflow: hidden;
-    width: 940px;
+    max-width: 940px;
 }
 
 .container-carrossel {
@@ -66,8 +70,12 @@ html {
 
 .img_carrossel {
     object-fit: cover;
-    width: 940px;
+    max-width: 940px;
     height: 470px;
+}
+
+.capa-mobile {
+    display: none;
 }
 
 /* QUEM SOMOS */
@@ -76,11 +84,6 @@ html {
     background-color: #d4c19f;
     padding-top: 2.5rem;
     padding-bottom: 2rem;
-}
-
-.container {
-    width: 940px;
-    margin: auto;
 }
 
 .titulo-quem-somos {
@@ -93,9 +96,12 @@ html {
 }
 
 .conteudo-quem-somos {
+    max-width: 940px;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    gap: 50px;
+    gap: 30px;
 }
 
   
@@ -118,8 +124,8 @@ html {
 
 .servicos {
     background-color: #1892b1;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .titulo-servicos {
@@ -133,17 +139,21 @@ html {
 }
 
 .lista-servicos {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 20px;
     padding: 30px 0;
+    align-items: center;
 }
 
 .lista-servicos li {
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
-    width: 30%;
+    /* width: 30%; */
     vertical-align: top;
-    margin: 0 1.5%;
+    /* margin: 0 1.5%; */
     padding: 20px 20px;
     box-sizing: border-box;
     border: 2px solid #d4c19f;
@@ -195,17 +205,20 @@ html {
 }
 
 .lista-producoes {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 20px;
 }
 
 .lista-producoes li {
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
-    width: 30%;
+    /* width: 30%; */
     vertical-align: top;
-    margin: 1.5% 1.5%;
+    /* margin: 1.5% 1.5%; */
     padding: 20px 20px;
     box-sizing: border-box;
     border: 2px solid #1892b1;
@@ -246,7 +259,7 @@ html {
 }
 
 .container-rodape {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -334,4 +347,107 @@ form label, form legend {
     font-weight: 500;
     color: white;
     padding: 2px 0;
+}
+
+@media screen and (max-width: 948px) {
+    .conteudo-quem-somos {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .lista-servicos {
+        padding: 0 10px;
+    }
+    .lista-producoes {
+        padding: 0 10px;
+    }
+    .conteudo-rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapa {
+        width: auto;
+    }
+
+    .carrossel {
+        display:  none;
+    }
+
+    .home {
+        padding: 100px 0 0 0;
+    }
+    .capa-mobile {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    form label, form legend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .input-padrao {
+        margin: 0 auto;
+    }
+
+    .enviar {
+        margin-top: 10px
+    }
+
+}
+
+@media screen and (max-width: 699px) {
+    .imagem-quem-somos {
+        display: none;
+    }
+    .paragrafo-quem-somos {
+        font-size: 16px;
+        text-align: left;
+    }
+    .titulo-quem-somos {
+        padding-bottom: 20px;
+    }
+
+    .titulo-servicos {
+        padding: 10px;
+    }
+
+    .fim-da-pagina {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape h2{
+        padding-bottom: 0;
+    }
+
+    textarea {
+        height: 50px;
+    }
+
+    .mapa {
+        display: none;
+    }
+
+    .container-cabecalho {
+        flex-direction: column;
+    }
+
+    .cabecalho-menu {
+        gap: 15px;
+        justify-content: space-between
+    }
+
+    .cabecalho-menu-item {
+        font-size: 15px;
+    }
+
+    .logo {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
 }
