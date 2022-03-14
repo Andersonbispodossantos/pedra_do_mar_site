@@ -6,8 +6,6 @@ html {
 
 .cabecalho {
     position: fixed;
-    /* left: 0;
-    top: 0; */
     box-sizing: border-box;
     width: 100%;
     background: #d4c19f;
@@ -150,11 +148,8 @@ html {
 }
 
 .lista-servicos li {
-    /* display: inline-block; */
     text-align: center;
-    /* width: 30%; */
     vertical-align: top;
-    /* margin: 0 1.5%; */
     padding: 20px 20px;
     box-sizing: border-box;
     border: 2px solid #d4c19f;
@@ -215,11 +210,8 @@ html {
 }
 
 .lista-producoes li {
-    /* display: inline-block; */
     text-align: center;
-    /* width: 30%; */
     vertical-align: top;
-    /* margin: 1.5% 1.5%; */
     padding: 20px 20px;
     box-sizing: border-box;
     border: 2px solid #1892b1;
@@ -280,10 +272,10 @@ html {
 }
 
 form {
-    margin: 0 0;
+    margin: 0;
 }
 
-form label, form legend {
+form label {
     display: block;
     font-size: 14px;
     font-weight: 600;
@@ -341,7 +333,7 @@ form label, form legend {
     min-width: 38px;
 }
 
-.contatos p {
+.contatos > p {
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 14px;
@@ -383,7 +375,7 @@ form label, form legend {
         width: 100%;
     }
 
-    form label, form legend {
+    form label {
         display: flex;
         flex-direction: column;
         align-items: center;
